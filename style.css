@@ -1,0 +1,373 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"), url(./fonts/Gilroy-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"), url(./fonts/Gilroy-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: local("Gilroy-Light"), url(./fonts/Gilroy-Light.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(243, 241, 241);
+}
+/* #intro {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+#main {
+  height: 100%;
+  width: 100%;
+  color: rgb(22, 21, 21);
+}
+#nav {
+  position: fixed;
+  width: 100%;
+  /* background-color: rgb(243, 241, 241); */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 15px;
+}
+
+#nav h3 {
+  background-color: rgb(22, 21, 21);
+  color: rgb(243, 241, 241);
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#intro {
+  width: 100vw;
+  height: 70vh;
+  background-color: rgb(243, 241, 241);
+  padding: 50px 70px;
+}
+
+#intro h1 {
+  font-size: 130px;
+  line-height: 140px;
+  letter-spacing: -3px;
+  color: rgb(22, 21, 21);
+  font-weight: bold;
+}
+
+#place {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#place h3,
+#place h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+h4,
+i {
+  margin-right: 8px;
+  font-size: 40px;
+  font-weight: thin;
+}
+
+#hero-image {
+  width: 100vw;
+  height: 100%;
+  background-image: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-1600.webp);
+  background-size: cover;
+}
+
+#about {
+  height: 94vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 75px;
+  background-color: rgb(243, 241, 241);
+}
+
+#about h2 {
+  color: rgb(22, 21, 21);
+  font-size: 86px;
+  width: 60%;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -3px;
+}
+
+#about-part2 {
+  width: 34%;
+  height: 100%;
+  border-left: 2px solid rgb(22, 21, 21);
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#about-part2 h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#icons i {
+  color: rgb(243, 241, 241);
+  background-color: rgb(22, 21, 21);
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 28px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.seprator {
+  height: 2px;
+  background-color: rgb(22, 21, 21);
+  width: 90%;
+  margin-left: 70px;
+}
+
+#work {
+  width: 100vw;
+  height: 85vh;
+  /* border-top: 2px solid black; */
+  display: flex;
+  padding: 31px 75px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#work-part1 {
+  display: flex;
+  justify-content: space-between;
+  width: 34%;
+  height: 100%;
+  padding: 0px 5px;
+}
+
+#work-part1 h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+#work-part1 i {
+  font-size: 40px;
+  font-weight: thin;
+}
+
+#work-part2 {
+  height: 100%;
+  width: 65vw;
+  border-left: 2px solid rgb(22, 21, 21);
+  padding: 0px 60px;
+}
+.work2-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+
+.work2-part:nth-child(1) {
+  border-bottom: 2px solid rgb(22, 21, 21);
+}
+.work2-part .elem {
+  width: 50%;
+  height: 100%;
+}
+.work2-part .elem:nth-child(1) {
+  border-right: 2px solid rgb(22, 21, 21);
+}
+
+.work2-part .elem h4 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.work2-part .elem p {
+  font-size: 18px;
+  color: rgb(123, 119, 119);
+  line-height: 30px;
+  padding-right: 17px;
+}
+.right-elem {
+  padding-left: 50px;
+}
+
+#worksymbol {
+  height: 40vh;
+  width: 100vw;
+}
+#worksymbol h1 {
+  font-size: 135px;
+  font-weight: bold;
+  padding: 50px 0px;
+  letter-spacing: -7px;
+}
+
+img {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectInfo {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectInfo h1 {
+  width: 45%;
+  font-size: 135px;
+  font-weight: bold;
+  padding: 50px 0px;
+  letter-spacing: -7px;
+  padding-left: 70px;
+}
+
+.projectInfo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+}
+.projectInfo2 p {
+  font-size: 21px;
+  font-weight: light;
+  padding: 40px 90px;
+  padding-left: 140px;
+  color: rgb(123, 119, 119);
+  line-height: 33px;
+  letter-spacing: 0.5px;
+}
+
+.subprojectInfo2 {
+  display: flex;
+  margin-bottom: 40px;
+  margin-left: 140px;
+}
+.subprojectInfo2 h6 {
+  background-color: rgb(37, 36, 36);
+  color: rgb(243, 241, 241);
+  font-size: 14px;
+  margin-right: 8px;
+  border-radius: 50px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Footer css code here */
+
+#footer {
+  background-color: rgb(22, 21, 21);
+  height: 165vh;
+  width: 100vw;
+}
+
+#footer-1 {
+  width: 100%;
+  height: 55%;
+  /* background-color: rgb(81, 62, 162); */
+}
+#subFooter1 {
+  padding-top: 10%;
+  padding-left: 30%;
+}
+
+#footer-1 h4 {
+  font-size: 28px;
+  color: rgb(243, 241, 241);
+  font-weight: bold;
+  padding-left: 23%;
+  padding-bottom: 2px;
+}
+
+#footer-1 h1 {
+  font-size: 142px;
+  letter-spacing: -5px;
+  word-spacing: -1px;
+  color: rgb(243, 241, 241);
+  font-weight: bold;
+}
+
+#footer-1 button {
+  font-size: 20px;
+  color: rgb(37, 36, 36);
+  background-color: rgb(243, 241, 241);
+  border-radius: 50px;
+  padding: 18px 30px;
+  margin-left: 23%;
+  margin-top: 3.5%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#footer-2 {
+  width: 100%;
+  height: 45%;
+}
+
+#subFoot {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+
+#subFoot div {
+  height: 100%;
+  width: 28%;
+  margin-left: 70px;
+}
+
+.foot h4 a {
+  color: rgb(243, 241, 241);
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.foot h4 {
+  padding-top: 8px;
+}
+
+.foot h6 {
+  font-size: 20px;
+  color: rgb(123, 119, 119);
+}
+
+#subfoot2 h3 {
+  color: rgb(243, 241, 241);
+  margin-left: 38%;
+}
